@@ -8,3 +8,6 @@ def find_max_min(ArrayValues):
  	Result.append(minValue)
  	if ArrayValues[-1] == minValue:
  		return Result
+ 	else:
+ 		Result.append(maxValue)
+ 		return Result

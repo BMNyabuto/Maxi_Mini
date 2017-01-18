@@ -5,9 +5,11 @@ def find_max_min(ArrayValues):
  		minValue = ArrayValues[0]
  		maxValue = ArrayValues[-1]
 
- 	Result.append(minValue)
- 	if ArrayValues[-1] == minValue:
- 		return Result
+ 		Result.append(minValue)
+ 		if ArrayValues[-1] == minValue:
+ 			return Result
+ 		else:
+ 			Result.append(maxValue)
+ 			return Result
  	else:
- 		Result.append(maxValue)
- 		return Result
+ 		raise TypeError('Parameter provided is not a list')

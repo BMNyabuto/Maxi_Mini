@@ -6,3 +6,5 @@ def find_max_min(ArrayValues):
  		maxValue = ArrayValues[-1]
 
  	Result.append(minValue)
+ 	if ArrayValues[-1] == minValue:
+ 		return Result
